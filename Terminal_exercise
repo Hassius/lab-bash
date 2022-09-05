@@ -1,0 +1,106 @@
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ echo Hello world
+Hello world
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ mkdir new_dir
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ rmdir new_dir
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cp lorem/at.txt lorem-copy; cp lorem/lorem.txt lorem-copy
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cat lorem/sed.txt; cat lorem/at.txt
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ echo 'Homo homini lupus' >> lorem-copy/sed.txt
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ tail -3 lorem-copy/sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ sed -i 's/et/ET/g' lorem/at.txt
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cat lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ whoami
+VideoMachine
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ pwd
+/c/Users/VideoMachine/IH-labs/lab-bash
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ find lorem -name *.txt
+lorem/at.txt
+lorem/lorem.txt
+lorem/sed.txt
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ cat lorem/sed.txt | wc -l
+9
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ find -name "lorem*.*" | wc -l
+2
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ var1="Simao"
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ echo $var1
+Simao
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ mkdir $var1
+
+VideoMachine@DESKTOP-N7IGD5R MINGW64 ~/IH-labs/lab-bash (master)
+$ rmdir $var1
+
+
+
+
